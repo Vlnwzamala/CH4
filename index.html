@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            box-sizing:border-box ;
+        }
+        header{
+            background-color: rgb(193, 247, 247);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(0, 0, 0);
+        }
+        article{
+            background-color: aquamarine;
+            float: left;
+            width: 70%;
+            height: 300px;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: circle;
+            padding: 0%;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        } 
+        nav{
+            background-color: rgb(202, 255, 242);
+            float: left;
+            width: 30%;
+            height: 300px;
+            padding: 20px;
+      }
+        footer{
+            background-color:rgb(47, 241, 255) ;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 600px)  {
+            nav, article  {
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><A href="https://www.kmutnb.ac.th/faculty-and-agencies/bangkok.aspx">KMUTNB</A></li>
+                <li><A href="https://www.facebook.com/FITM.KMUTNB">FITM</A></li>
+                <li><A href="https://www.facebook.com/chanachai.ccc">FACEBOOK</A></li>
+                <li><A href="input.html">INPUT</A></li>
+                <li><A href="layout.html">Layout</A></li>
+            </ul>    
+        </nav>
+        <article>
+        นายชนะชัย หากิจ รหัส 6906022511284<br>
+        <img src="image/nawe.jpg" alt="nawe" height="200" width="200">
+        </article>
+    </section>
+    <footer>
+        ขอข้อสอบ DOS Linux หน่อยครับ
+    </footer>
+</body>
+</html>
